@@ -19,9 +19,11 @@ After that... How do we deliver these price changes? Doesn't matter, the above i
 ### To Do: 
 
 1. Set up ingestion pipeline
-    1. ~~Categories (games)~~ Done 
-    2. Groups (sets)
-    3. SKUs (cards) 
+    1. ~~Categories (games)~~ **Done** 
+    2. ~~Groups (sets)~~ **Done** 
+        1. Refactor groups to take category/game name instead of category id 
+    3. ~~SKUs (cards)~~ **Done** 
+    4. Create an ingestion script to scrape all cards and prices for all tcgs.
 2. Set up a database (postgres)
     1. DDL for tables 
     2. Load jobs to get ingested data into the database.
@@ -31,3 +33,4 @@ After that... How do we deliver these price changes? Doesn't matter, the above i
         3. 30 days
     4. Create jobs to run stored procs daily
 3. Research how to deliver these price changes
+4. ~~Implement setuptools for click cli~~ **Done** 
